@@ -7,23 +7,30 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.jpg">
   </head>
   <body>
-    <ul>
-      <li><h1>China Propaganda</h1></li>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="page2/index.html">Page 2</a></li>
+    <ul class="navbar">
+      <li class="navitem"><a class="navtitle" href="#">China Propaganda</a></li>
+      <li class="navitem"><a class="navtext active" href="#">Home</a></li>
+      <li class="navitem"><a class="navtext" href="page2/index.html">Page 2</a></li>
     </ul>
     <section>
-      <h1>Chinese Government Propaganda</h1>
-      <img class="amogimage" src="assets/favicon.jpg" height="200" width="200">
-      <p>The Tianamen Square Massacre of 1989 was a very bad inccident made by the chinese government</p>
-      <p>Taiwan is a country</p>
-      <p>Communism is bad</p>
-      <p>CCP is bad</p>
-      <p>Xi Jinping looks like weenee the pooh</p>
-      <button id="button1" class="button button1" onmouseover="document.getElementById('hovp').innerHTML = 'hovered'" onmouseout="document.getElementById('hovp').innerHTML = 'not hovered'">button</button>
-      <script src="js/index.js"></script>
-      <p id="hovp">not hovered</p>
-      <p id="hiddenp"></p>
+      <article>
+        <h1>Chinese Government Propaganda</h1>
+        <img class="amogimage" src="assets/favicon.jpg" height="200" width="200">
+        <p>The Tianamen Square Massacre of 1989 was a very bad inccident made by the chinese government</p>
+        <p>Taiwan is a country</p>
+        <p>Communism is bad</p>
+        <p>CCP is bad</p>
+        <p>Xi Jinping looks like weenee the pooh</p>
+        <button id="button1" class="button button1" onmouseover="document.getElementById('hovp').innerHTML = 'hovered'" onmouseout="document.getElementById('hovp').innerHTML = 'not hovered'">button</button>
+        <script src="js/index.js"></script>
+        <p id="hovp">not hovered</p>
+        <p id="hiddenp"></p>
+      </article>
+      <nav>
+        <ul style="list-style-type: none; padding: 10px;">
+          <li><a>a</a></li>
+        </ul>
+      </nav>
     </section>
   </body>
 </html>
