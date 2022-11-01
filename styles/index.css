@@ -159,17 +159,13 @@ img {
   transition-duration: 0.25s;
 }
 
-.amogimage {
+.artimage {
   float: right;
   z-index: -1;
 }
 
-.amogimage:hover {
+.artimage:hover {
   height: 230px;
   width: 230px;
 }
 
-.xijipimage:hover {
-  height: 689px;
-  width: 515px;
-}
