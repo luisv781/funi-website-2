@@ -1,0 +1,94 @@
+@import url(../../../fonts/Montserrat.css);
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0;
+  background: #222;
+}
+
+
+.navbar {
+  background-color: #363636;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+}
+
+.navtext {
+  background-color: #303030;
+  display: block;
+  padding: 18px;
+  font-family: Arial;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+.active {
+  background-color: #262626;
+}
+
+.navtext:hover {
+  background-color: #505050;
+}
+
+
+
+.topbar {
+  background-color: #262626;
+  overflow: hidden;
+}
+
+.topbar a {
+  float: left;
+  background-color: #1e4f37;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topbar a:hover {
+  background-color: #befae2;
+  color: black;
+}
+
+.topbar a.active {
+  background-color: #35db88;
+  color: white;
+}
+
+.gameFrame {
+  margin: auto;
+  display: block;
+  border: none;
+  width: 80%;
+  height: 500px;
+  padding: 15px;
+}
+
+.fsButton {
+  margin: auto;
+  display: block;
+  width: 80%;
+  height: 60px;
+  color: #fff;
+  background-color: #707070;
+  border: 8px solid #555;
+  border-radius: 12px;
+  font: bold 2em Montserrat;
+  transition-duration: .25s;
+}
+
+.fsButton:hover {
+  background-color: #858585;
+  border-color: #656565;
+}
