@@ -18,6 +18,11 @@ body {
   margin: 0;
 }
 
+.navitem {
+  float: left;
+  display: inline;
+}
+
 .navtext {
   background-color: #303030;
   display: block;
@@ -39,7 +44,18 @@ body {
   background-color: #505050;
 }
 
-
+.navtitle {
+  float: left;
+  font-family: Arial;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 8px;
+  padding-right: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+}
 
 .topbar {
   background-color: #262626;
@@ -78,13 +94,16 @@ body {
 .fsButton {
   margin: auto;
   display: block;
+  padding: 4px;
   width: 80%;
-  height: 60px;
+  /*height: 60px;*/
   color: #fff;
   background-color: #707070;
   border: 8px solid #555;
   border-radius: 12px;
-  font: bold 2em Montserrat;
+  font: 700 2.5em Montserrat;
+  text-align: center;
+  text-decoration: none;
   transition-duration: .25s;
 }
 
