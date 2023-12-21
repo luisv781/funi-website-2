@@ -65,8 +65,8 @@ p {
   color: #eee;
 }
 
-li {
-  padding-bottom: 12px;
+li:not(.navitem) {
+  padding: 12px;
   font-size: 1em;
   font-weight: 600;
   text-decoration: none;

@@ -4,6 +4,8 @@ body {
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
+
+  font-family: Montserrat;
 }
 
 .navbar {
@@ -55,7 +57,7 @@ a.active {
 }
 
 p, a {
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
 }
