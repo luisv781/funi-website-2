@@ -1,3 +1,4 @@
+@import url(/fonts/Montserrat.css);
 body {
   background-color: #222;
   margin-top: 0px;
@@ -23,9 +24,9 @@ body {
   background-color: #303030;
   display: block;
   padding: 18px;
-  font-family: Arial;
+  font-family: Montserrat;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
   text-align: center;
   text-decoration: none;
