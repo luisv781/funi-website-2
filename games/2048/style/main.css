@@ -1,21 +1,19 @@
-@import url(fonts/clear-sans.css);
+@import url("/fonts/Montserrat.css");
 html, body {
   margin: 0;
   padding: 0;
   background: #222;
   color: #eee;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
 }
-
-
-
 
 .navtext {
   background-color: #303030;
   display: block;
   padding: 18px;
-  font-family: Arial;
+  font-family: Montserrat;
   font-size: 1.5em;
+  font-weight: 600;
   color: #fff;
   text-align: center;
   text-decoration: none;

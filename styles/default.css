@@ -1,0 +1,63 @@
+@import url("/fonts/Montserrat.css");
+body {
+  background-color: #222;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+  font-family: Montserrat;
+}
+
+.navbar {
+  background-color: #363636;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+}
+
+.navitem {
+  float: left;
+  display: inline;
+}
+  
+.navtext {
+  background-color: #303030;
+  display: block;
+  padding: 18px;
+  font-family: Montserrat;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+.navtext:hover {
+  background-color: #505050;
+}
+  
+a.active {
+  background-color: #262626;
+}
+
+.navtitle {
+  float: left;
+  font-family: Montserrat;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 8px;
+  padding-right: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+}
+
+p, a {
+  font-family: Montserrat, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
