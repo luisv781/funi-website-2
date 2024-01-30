@@ -1,11 +1,8 @@
 @import url("/funi-website-2/fonts/Montserrat.css");
 body {
   background-color: #222;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-
-  font-family: Montserrat;
+  margin: 0;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 /* Navigation Bar */
@@ -19,6 +16,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .navitem {
@@ -62,7 +60,6 @@ a.active {
 
 
 p, a {
-  font-family: Montserrat, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
 }
