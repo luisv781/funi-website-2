@@ -1,27 +1,51 @@
-article {
+section {
   background-color: #444;
-  margin: auto;
-  margin-top: 25px;
+  margin: 25px 72px;
   padding: 10px;
-  float: center;
-  width: 85%;
+  width: auto;
   border-radius: 30px;
   box-shadow: 8px 8px 10px 2px rgba(0,0,0,0.4);
   transition-duration: 0.25s;
 }
 
-article h1 {
+section h1 {
   font-size: 3.25em;
   text-align: center;
   color: #fff;
   margin: 0;
 }
 
-a {
-  font-size: 2em;
+article {
+  background-color: #555;
+  margin: 24px 42px;
+  padding: 15px;
+  display: flow-root;
+  width: auto;
+  border-radius: 2em;
+  box-shadow: 8px 8px 10px 2px rgba(0,0,0,0.4);
+  transition-duration: 0.15s;
+}
+article:hover {
+  margin: 24px 20px;
 }
 
-ul {
-  list-style: disc outside;
+article h2 {
+  font-size: 2.25em;
+  text-align: left;
   color: #fff;
+  margin: 8px;
 }
+
+article p {
+  margin: 8px;
+  box-sizing: border-box;
+  font-size: 1.5em;
+}
+
+article img {
+  border-radius: 2em;
+  box-shadow: 6px 6px 16px 4px rgba(0,0,0,0.4);
+  height: 8em;
+  float: right;
+}
+

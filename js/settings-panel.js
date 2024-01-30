@@ -5,8 +5,8 @@ const favicon = document.querySelector("link[rel~='icon']");*/
 
 const defaultIcon = "/funi-website-2/assets/favicon.jpg";
 const defaultTitle = String(document.title);
-const iconPresets = ["canvas.ico", "google.png"];
-const titlePresets = ["Dashboard", "Google"];
+const iconPresets = ["canvas.ico", "google.png", "clever.ico"];
+const titlePresets = ["Dashboard", "Google", "Clever"];
 
 let panelOpen = false;
 function openSettings() {

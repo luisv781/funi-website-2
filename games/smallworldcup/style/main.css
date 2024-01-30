@@ -1,0 +1,29 @@
+.gameFrame {
+  margin: auto;
+  display: block;
+  border: none;
+  width: 80%;
+  height: 500px;
+  padding: 15px;
+}
+
+.fsButton {
+  margin: auto;
+  display: block;
+  padding: 4px;
+  width: 75%;
+  /*height: 60px;*/
+  color: #fff;
+  background-color: #707070;
+  border: 8px solid #555;
+  border-radius: 12px;
+  font: 700 2.25em Montserrat;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.fsButton:hover {
+  background-color: #858585;
+  border-color: #656565;
+}
