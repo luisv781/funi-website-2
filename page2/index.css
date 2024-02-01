@@ -40,3 +40,8 @@ img#carlito {
   width: 160px;
 }
 
+model-viewer {
+  height: 25em;
+  width: auto;
+  margin: 10px auto;
+}
