@@ -79,6 +79,23 @@ button {
   cursor: text;
 }
 
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    position: relative;
+    padding: 0;
+  }
+  .navtitle {
+    display: block;
+    float: none;
+    margin: auto;
+  }
+  .navitem {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 /* Settings Panel and Button */
 div#settings-button {
   position: fixed;
