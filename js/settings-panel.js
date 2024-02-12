@@ -1,10 +1,8 @@
 const settingsPanel = document.getElementById("settings-panel");
 const iconLinkBox = document.getElementById("iconLink");
-const tabTitleBox = document.getElementById("tabTitle");/*
-const favicon = document.querySelector("link[rel~='icon']");*/
+const tabTitleBox = document.getElementById("tabTitle");
+/*const favicon = document.querySelector("link[rel~='icon']");*/
 
-const defaultIcon = "/funi-website-2/assets/favicon.jpg";
-const defaultTitle = String(document.title);
 const iconPresets = ["canvas.ico", "google.png", "clever.ico"];
 const titlePresets = ["Dashboard", "Google", "Clever"];
 
