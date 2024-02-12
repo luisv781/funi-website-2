@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>funi website</title>
-    <meta name="description" content="idek bruh">
-    <meta content="/funi-website-2/assets/carlito.jpg" property="og:image"/>
-    <meta content="#669cff" data-react-helmet="true" name="theme-color"/>
-    <meta name="google-site-verification" content="SvUt3oUUe9X73rN7_jJylUyX_E8cla9mvayBhpWRbfM" />
-    <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="/funi-website-2/js/settings-panel.js" defer></script>
-    <script src="/funi-website-2/js/default.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="/funi-website-2/assets/favicon.jpg">
-  </head>
-  <body>
-    <ul class="navbar">
-      <li class="navitem"><a class="navtitle" href="/funi-website-2">funi website</a></li>
-      <li class="navitem"><a class="navtext active" href="/funi-website-2">Home</a></li>
-      <li class="navitem"><a class="navtext" href="/funi-website-2/page2">Page 2</a></li>
-      <li class="navitem"><a class="navtext" href="/funi-website-2/games">Games</a></li>
-    </ul>
-    <section>
-      <nav>
-        <ul>
-          <li><a href="#index">China Propaganda</a></li>
-          <li><a href="#a1">Xi Jinping is not weenee</a></li>
-        </ul>
-      </nav>
+	<head>
+		<meta charset="utf-8">
+		<title>funi website</title>
+		<meta name="description" content="idek bruh">
+		<meta content="/funi-website-2/assets/images/carlito.jpg" property="og:image"/>
+		<meta content="#669cff" data-react-helmet="true" name="theme-color"/>
+		<meta name="google-site-verification" content="SvUt3oUUe9X73rN7_jJylUyX_E8cla9mvayBhpWRbfM" />
+		<link rel="stylesheet" href="styles/default.css">
+		<link rel="stylesheet" href="styles/index.css">
+		<script src="/funi-website-2/js/settings-panel.js" defer></script>
+		<script src="/funi-website-2/js/default.js" defer></script>
+		<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+		<link rel="icon" type="image/x-icon" href="/funi-website-2/assets/favicon.jpg">
+	</head>
+	<body>
+		<ul id="navbar">
+			<li class="navitem navtitleitem"><a class="navtitle" href="/funi-website-2">funi website</a></li>
+			<li class="navitem"><a class="navtext active" href="/funi-website-2">Home</a></li>
+			<li class="navitem"><a class="navtext" href="/funi-website-2/page2">Page 2</a></li>
+			<li class="navitem"><a class="navtext" href="/funi-website-2/games">Games</a></li>
+			<li class="navitem"><a class="navtext" href="/funi-website-2/gallery">Gallery</a></li>
+			<li class="navitem"><a class="navtext" href="/funi-website-2/more">More</a></li>
 
-      <article id="index">
-        <h1>Chinese Government Propaganda</h1>
-        <img class="article-image" src="/funi-website-2/assets/carlito.jpg" height="200" width="200">
-        <p>The Tianamen Square Massacre of 1989 is not real</p>
-        <p>Taiwan is owned by China</p>
-        <p>Capitalism is bad</p>
-        <p>CCP is good</p>
-      </article>
-      <article id="a1">
-        <h1>Xi Jinping dont look like pooh</h1>
-        <img class="article-image" src="/funi-website-2/assets/xijinsquare.png" height="200" width="200">
-      </article>
-    </section>
+			<div id="menubutton"><a href="javascript:void(0);" onclick="openMenu()"><img src="/funi-website-2/assets/svg/menu.svg"></a></div>
+		</ul>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#more">Websites</a></li>
+					<li><a href="#china">China Propaganda</a></li>
+				</ul>
+			</nav>
 
-    <div id="settings-button" onclick="openSettings()">
-      <img class="settings" src="/funi-website-2/assets/settings-icon.svg">
-    </div>
-    <div id="settings-panel">
-      <h1 class="settings-panel-text">Tab Settings</h1><br>
+			<article id="about">
+				<h1>whats so funi?</h1>
+				<img class="article-image" src="/funi-website-2/assets/images/carlito.jpg">
+				<p>Click the settings button to change the tab icon or title</p>
+				<p>you can copy and paste an image link and you can also have a custom title</p>
+				<p>The games tab has some games</p>
+				<p>Page 2 is just some random shit that i change every once in a while</p>
+			</article>
 
-      <h4 class="settings-panel-subheading settings-panel-text">Tab Icon</h4>
-      <p class="settings-panel-text">URL of the icon you want to set as the tab icon.</p>
-      <input type="url" id="iconLink" class="text-box"> <button id="iconSetButton" onclick="setIcon('custom')">Set</button> <button id="iconResetButton" onclick="resetIcon()">Reset</button>
-      
-      <h4 class="settings-panel-subheading settings-panel-text">Tab Title</h4>
-      <p class="settings-panel-text">Set the name of the tab.</p>
-      <input type="text" id="tabTitle" class="text-box"> <button id="titleSetButton" onclick="setTitle('custom')">Set</button> <button id="titleResetButton" onclick="resetTitle()">Reset</button>
+			<!--article id="a1">
+				<h1>Xi Jinping dont look like pooh</h1>
+				<img class="article-image" src="/funi-website-2/assets/xijinsquare.png">
+			</article-->
 
-      <h4 class="settings-panel-subheading settings-panel-text">Presets</h4>
-      <div>
-        <button onclick="setIcon('0'); setTitle('0');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/canvas.ico" alt="Canvas"></button>
-        <button onclick="setIcon('1'); setTitle('1');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/google.png" alt="Google"></button>
-        <button onclick="setIcon('2'); setTitle('2');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/clever.ico" alt="Clever"></button>
-      </div>
-    </div>
-  </body>
+			<article id="more">
+				<h1>more websites</h1>
+				<model-viewer class="article-image float-left" src="/funi-website-2/assets/model/carloshead.glb" camera-controls></model-viewer>
+				<p><a href="https://sites.google.com/site/classroom6x/">Classroom 6x</a>- has a larger list of games</p>
+				<p><a href="https://drive.google.com/drive/folders/1bS9kta_2CXvpcGuglIOT11z-f--D448G?usp=sharing">My Google Drive</a>- i have some apps that you can install on the laptops without them getting blocked</p>
+				<p>if ur confused or have questions, click the <a class="link-normal" href="/funi-website-2/more">more</a> tab at the top where i explain how to use some of these things</p>
+			</article>
+
+			<article id="china">
+				<h1>Chinese Government Propaganda</h1>
+				<img class="article-image" src="/funi-website-2/assets/images/carl.jpg" onclick="this.src = '/funi-website-2/assets/images/gallery/carlos_joker.png'">
+				<p>The Tianamen Square Massacre of 1989 is not real</p>
+				<p>Taiwan is owned by China</p>
+				<p>Capitalism is bad</p>
+				<p>CCP is good</p>
+			</article>
+		</section>
+
+		<div id="settings-button" onclick="openSettings()">
+			<img class="settings" src="/funi-website-2/assets/svg/settings-icon.svg">
+		</div>
+		<div id="settings-panel">
+			<h1 class="settings-panel-text">Tab Settings</h1><br>
+
+			<h4 class="settings-panel-subheading settings-panel-text">Tab Icon</h4>
+			<p class="settings-panel-text">URL of the icon you want to set as the tab icon.</p>
+			<input type="url" id="iconLink" class="text-box"> <button id="iconSetButton" onclick="setIcon('custom')">Set</button> <button id="iconResetButton" onclick="resetIcon()">Reset</button>
+			
+			<h4 class="settings-panel-subheading settings-panel-text">Tab Title</h4>
+			<p class="settings-panel-text">Set the name of the tab.</p>
+			<input type="text" id="tabTitle" class="text-box"> <button id="titleSetButton" onclick="setTitle('custom')">Set</button> <button id="titleResetButton" onclick="resetTitle()">Reset</button>
+
+			<h4 class="settings-panel-subheading settings-panel-text">Presets</h4>
+			<div>
+				<button onclick="setIcon('0'); setTitle('0');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/canvas.ico" alt="Canvas"></button>
+				<button onclick="setIcon('1'); setTitle('1');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/google.png" alt="Google"></button>
+				<button onclick="setIcon('2'); setTitle('2');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/clever.ico" alt="Clever"></button>
+			</div>
+		</div>
+	</body>
 </html>
