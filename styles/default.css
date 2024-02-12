@@ -6,10 +6,9 @@ body {
 }
 
 /* Navigation Bar */
-.navbar {
+#navbar {
   background-color: #363636;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0;
   list-style-type: none;
   overflow: hidden;
   margin: 0;
@@ -19,48 +18,70 @@ body {
   z-index: 999;
 }
 
-.navitem {
+#navbar .navitem {
   float: left;
-  display: inline;
+  width: auto;
+  height: 3.6em;
+  display: flex;
+  align-content: center;
 }
   
-.navtext {
-  background-color: #303030;
+#navbar .navitem .navtext {
   display: block;
-  padding: 18px;
+  background-color: #303030;
+  padding: 0 20px;
+  height: 100%;
   font-family: Montserrat;
   font-size: 1.5em;
   font-weight: 600;
-  color: #fff;
+  line-height: 2.2em;
   text-align: center;
   text-decoration: none;
   transition-duration: 0.25s;
 }
 
-.navtext:hover {
+#navbar .navitem .navtext:hover {
   background-color: #505050;
 }
-  
-a.active {
+
+#navbar .navitem .navtitle {
+  float: left;
+  font-family: Montserrat;
+  font-size: 2.2em;
+  font-weight: bold;
+  padding: 4px 24px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto 0;
+}
+
+#navbar .navtext.active {
   background-color: #262626;
 }
 
-.navtitle {
-  float: left;
-  font-family: Montserrat;
-  font-size: 2.5em;
-  font-weight: bold;
-  padding: 8px;
-  padding-right: 15px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  margin: 0;
+
+#menubutton {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  height: 3.6em;
+}
+#menubutton img, #menubutton a {
+  height: 100%;
+  display: block;
 }
 
 
 p, a {
   text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0;
   color: #fff;
 }
 
@@ -80,22 +101,6 @@ button {
 }
 
 
-@media screen and (max-width: 800px) {
-  .navbar {
-    position: relative;
-    padding: 0;
-  }
-  .navtitle {
-    display: block;
-    float: none;
-    margin: auto;
-  }
-  .navitem {
-    width: 100%;
-    margin: 0;
-  }
-}
-
 /* Settings Panel and Button */
 div#settings-button {
   position: fixed;
@@ -103,6 +108,7 @@ div#settings-button {
   right: 10px;
   box-sizing: border-box;
   padding: 6px;
+  z-index: 998;
 }
 
 div#settings-button :hover {
@@ -122,17 +128,21 @@ div#settings-button :hover {
 #settings-panel {
   display: none;
   position: fixed;
-  top: 50px;
+  top: 4em;
   right: 25px;
-  width: 30%;
-  height: 70%;
+
   padding: 4px;
+  width: 24em; /* 30% */
+  height: 70%;
+  overflow: auto;
 
   background-color: #333;
   color: #fff;
   border: 12px solid #444;
   border-radius: 16px;
   box-shadow: 0px 0px 15px 2px #000;
+
+  z-index: 999;
 }
 
 .settings-panel-text {
@@ -147,4 +157,43 @@ div#settings-button :hover {
   width: 32px;
   height: 32px;
   margin: 2px;
+}
+#settings-panel input {
+  width: 60%;
+  margin: 4px 0;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 800px) {
+  #navbar {
+    position: relative;
+    padding: 0;
+    z-index: auto;
+  }
+  #navbar .navitem:not(.navtitleitem) {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  #navbar .navitem .navtitle {
+    display: block;
+    float: none;
+    margin: auto;
+  }
+  #navbar .navitem .navtext {
+    width: 100%;
+  }
+  #menubutton {
+    display: block;
+  }
+
+  #settings-panel {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 800px) {
+  #navbar .navitem {
+    display: flex !important;
+  }
 }
