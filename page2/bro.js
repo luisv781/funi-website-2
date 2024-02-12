@@ -26,6 +26,5 @@ function loc(pos) {
 
 function changeImg() {
     let img = document.getElementById("carlito");
-    img.src = "/funi-website-2/assets/carl.jpg";
+    img.src = "/funi-website-2/assets/images/carl.jpg";
 }
-
