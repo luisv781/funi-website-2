@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>h</title>
-    <link rel="stylesheet" href="/funi-website-2/styles/default.css">
-    <link rel="stylesheet" href="/funi-website-2/styles/games.css">
-    <script src="/funi-website-2/js/settings-panel.js" defer></script>
-    <script src="/funi-website-2/js/default.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="/funi-website-2/assets/favicon.jpg">
-  </head>
-  <body>
-    <ul class="navbar">
-      <li class="navitem"><a class="navtitle" href="/funi-website-2">funi website</a></li>
-      <li class="navitem"><a class="navtext" href="/funi-website-2">Home</a></li>
-      <li class="navitem"><a class="navtext" href="/funi-website-2/page2">Page 2</a></li>
-      <li class="navitem"><a class="navtext active" href="/funi-website-2/games">Games</a></li>
-    </ul>
+	<head>
+		<meta charset="utf-8">
+		<title>h</title>
+		<link rel="stylesheet" href="/funi-website-2/styles/default.css">
+		<link rel="stylesheet" href="/funi-website-2/styles/games.css">
+		<script src="/funi-website-2/js/settings-panel.js" defer></script>
+		<script src="/funi-website-2/js/default.js" defer></script>
+		<link rel="icon" type="image/x-icon" href="/funi-website-2/assets/favicon.jpg">
+	</head>
+	<body>
+		<ul id="navbar">
+			<li class="navitem navtitleitem"><a class="navtitle" href="/funi-website-2">funi website</a></li>
+			<li class="navitem"><a class="navtext" href="/funi-website-2">Home</a></li>
+			<li class="navitem"><a class="navtext" href="/funi-website-2/page2">Page 2</a></li>
+			<li class="navitem"><a class="navtext active" href="/funi-website-2/games">Games</a></li>
+			<li class="navitem"><a class="navtext" href="/funi-website-2/gallery">Gallery</a></li>
+			<li class="navitem"><a class="navtext" href="/funi-website-2/more">More</a></li>
 
-    <section>
-      <h1>Games</h1>
-      <a href="2048"><article>
-        <img src="/funi-website-2/assets/gameicons/2048.png">
-        <h2>2048</h2>
-        <p>it's just a puzzle game. you combine the numbers to try to get to 2048.</p>
-      </article></a>
-      <a href="cookie"><article>
-        <img src="/funi-website-2/assets/gameicons/cookie.png">
-        <h2>Cookie Clicker</h2>
-        <p>you literally just click a cookie</p>
-      </article></a>
-      <a href="1v1lol"><article>
-        <img src="/funi-website-2/assets/gameicons/1v1lol.png">
-        <h2>1v1.lol</h2>
-        <p>Fortnite.</p>
-      </article></a>
-      <a href="badpiggies"><article>
-        <img src="/funi-website-2/assets/gameicons/badpiggies.png">
-        <h2>Bad Piggies</h2>
-        <p>your childhood wasn't real if you neva play this shit</p>
-      </article></a>
-      <a href="smallworldcup"><article>
-        <img src="/funi-website-2/assets/gameicons/smallworldcup.png">
-        <h2>A Small World Cup</h2>
-        <p>small world cup</p>
-      </article></a>
-      <a href="run3"><article>
-        <img src="/funi-website-2/assets/gameicons/run3.png">
-        <h2>Run 3</h2>
-        <p>it used to be the only thing i played in cool math games</p>
-      </article></a>
-    </section>
+			<div id="menubutton"><a href="javascript:void(0);" onclick="openMenu()"><img src="/funi-website-2/assets/svg/menu.svg"></a></div>
+		</ul>
 
-    <div id="settings-button" onclick="openSettings()">
-      <img class="settings" src="/funi-website-2/assets/settings-icon.svg">
-    </div>
-    <div id="settings-panel">
-      <h1 class="settings-panel-text">Tab Settings</h1><br>
+		<section>
+			<h1>Games</h1>
+			<a href="2048"><article>
+				<img src="/funi-website-2/assets/gameicons/2048.png">
+				<h2>2048</h2>
+				<p>it's just a puzzle game. you combine the numbers to try to get to 2048.</p>
+			</article></a>
+			<a href="cookie"><article>
+				<img src="/funi-website-2/assets/gameicons/cookie.png">
+				<h2>Cookie Clicker</h2>
+				<p>you literally just click a cookie</p>
+			</article></a>
+			<a href="1v1lol"><article>
+				<img src="/funi-website-2/assets/gameicons/1v1lol.png">
+				<h2>1v1.lol</h2>
+				<p>Fortnite.</p>
+			</article></a>
+			<a href="badpiggies"><article>
+				<img src="/funi-website-2/assets/gameicons/badpiggies.png">
+				<h2>Bad Piggies</h2>
+				<p>your childhood wasn't real if you neva play this shit</p>
+			</article></a>
+			<a href="smallworldcup"><article>
+				<img src="/funi-website-2/assets/gameicons/smallworldcup.png">
+				<h2>A Small World Cup</h2>
+				<p>small world cup</p>
+			</article></a>
+			<a href="run3"><article>
+				<img src="/funi-website-2/assets/gameicons/run3.png">
+				<h2>Run 3</h2>
+				<p>it used to be the only thing i played in cool math games</p>
+			</article></a>
+			<a href="learntofly"><article>
+				<img src="/funi-website-2/assets/gameicons/learntofly.png">
+				<h2>Learn to Fly</h2>
+				<p>i actually havent played the game</p>
+			</article></a>
+		</section>
 
-      <h4 class="settings-panel-subheading settings-panel-text">Tab Icon</h4>
-      <p class="settings-panel-text">URL of the icon you want to set as the tab icon.</p>
-      <input type="url" id="iconLink" class="text-box"> <button id="iconSetButton" onclick="setIcon('custom')">Set</button> <button id="iconResetButton" onclick="resetIcon()">Reset</button>
-      
-      <h4 class="settings-panel-subheading settings-panel-text">Tab Title</h4>
-      <p class="settings-panel-text">Set the name of the tab.</p>
-      <input type="text" id="tabTitle" class="text-box"> <button id="titleSetButton" onclick="setTitle('custom')">Set</button> <button id="titleResetButton" onclick="resetTitle()">Reset</button>
+		<div id="settings-button" onclick="openSettings()">
+			<img class="settings" src="/funi-website-2/assets/svg/settings-icon.svg">
+		</div>
+		<div id="settings-panel">
+			<h1 class="settings-panel-text">Tab Settings</h1><br>
 
-      <h4 class="settings-panel-subheading settings-panel-text">Presets</h4>
-      <div>
-        <button onclick="setIcon('0'); setTitle('0');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/canvas.ico" alt="Canvas"></button>
-        <button onclick="setIcon('1'); setTitle('1');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/google.png" alt="Google"></button>
-        <button onclick="setIcon('2'); setTitle('2');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/clever.ico" alt="Clever"></button>
-      </div>
-    </div>
-  </body>
+			<h4 class="settings-panel-subheading settings-panel-text">Tab Icon</h4>
+			<p class="settings-panel-text">URL of the icon you want to set as the tab icon.</p>
+			<input type="url" id="iconLink" class="text-box"> <button id="iconSetButton" onclick="setIcon('custom')">Set</button> <button id="iconResetButton" onclick="resetIcon()">Reset</button>
+			
+			<h4 class="settings-panel-subheading settings-panel-text">Tab Title</h4>
+			<p class="settings-panel-text">Set the name of the tab.</p>
+			<input type="text" id="tabTitle" class="text-box"> <button id="titleSetButton" onclick="setTitle('custom')">Set</button> <button id="titleResetButton" onclick="resetTitle()">Reset</button>
+
+			<h4 class="settings-panel-subheading settings-panel-text">Presets</h4>
+			<div>
+				<button onclick="setIcon('0'); setTitle('0');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/canvas.ico" alt="Canvas"></button>
+				<button onclick="setIcon('1'); setTitle('1');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/google.png" alt="Google"></button>
+				<button onclick="setIcon('2'); setTitle('2');"><img class="settings-panel-preset-image" src="/funi-website-2/assets/favicon/clever.ico" alt="Clever"></button>
+			</div>
+		</div>
+	</body>
 </html>
