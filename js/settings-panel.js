@@ -4,7 +4,7 @@ const tabTitleBox = document.getElementById("tabTitle");
 /*const favicon = document.querySelector("link[rel~='icon']");*/
 
 const iconPresets = ["canvas.ico", "google.png", "clever.ico"];
-const titlePresets = ["Dashboard", "Google", "Clever"];
+const titlePresets = ["Dashboard", "Google", "Clever | Portal"];
 
 let panelOpen = false;
 function openSettings() {
