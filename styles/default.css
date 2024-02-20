@@ -84,6 +84,10 @@ h1, h2 {
   margin: 0;
   color: #fff;
 }
+h2 {
+  font-size: 2em;
+  text-align: left;
+}
 
 button, .text-box {
   background-color: #555;
